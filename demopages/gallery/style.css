@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.navigationbar{
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Oswald';
+}
+.navigationbar a{
+text-decoration: none;
+color: black;
+}
+.navigationbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Oswald';
+    color: black;
+    font-weight: bold;
+}
+.navigationbar a.nav-logo:hover{
+    color: grey;
+}
+.navigationbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navigationbar ul li{
+    display: inline-block;
+    font-weight: bold;
+}
+.navigationbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+    letter-spacing: 1px;
+}
+.navigationbar ul li a:hover{
+    color: white;
+    background-color: rgb(131, 0, 44);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 60px 0 60px;
+}
+.container .heading{
+    width: 80%;
+    padding-bottom: 50px;
+}
+.container .heading h3{
+font-size: 3em;
+font-weight: bolder;
+padding-bottom: 10px;
+border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+    font-weight: 100;
+    }
+    .container .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container .box .dream{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+    }
+.container .box .dream img{
+    width: 100%;
+    margin-top: 20%;
+    padding-bottom: 50px;  
+}
+    .back{
+        font-family: 'Oswald';
+        font-size: 20px;
+        font-weight: bolder;
+        position: absolute;
+        background: whitesmoke;
+        cursor: pointer;
+        padding: 12px 20px;
+        color: black;
+        border: 0;
+        border-radius: 20px;
+        top: 90%;
+        right: 11%;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    .back:hover{
+        background: rgb(131, 0, 44);
+    }
+    .next{
+        font-family: 'Oswald';
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        background: whitesmoke;
+        cursor: pointer;
+        padding: 12px 20px;
+        color: black;
+        border: 0;
+        border-radius: 20px;
+        top: 90%;
+        right: 5%;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    .next:hover{
+        background: rgb(131, 0, 44);
+    }
+    @media only screen and (max-width: 1040px){
+        .navigationbar{
+            display:none;
+        }
+        .container .box{
+            display: flex;
+            flex-direction: column;
+        }
+        .container .box .dream{
+            margin-top: 60px;
+            width: 100%;
+        }
+    }   
+    @media only screen and (max-width: 414px){
+        .container .heading{
+            width: 100%;
+        }
+        .container .heading h3{
+        font-size: 1em;
+        }
+    }
