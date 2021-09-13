@@ -73,6 +73,21 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.review{
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    background: rgb(131, 0, 44);
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    top: 75%;
+    left: 11%;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
 .next{
     font-family: 'Oswald';
     font-size: 20px;
