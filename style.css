@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigationbar{
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid white;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Oswald';
+}
+.navigationbar a{
+text-decoration: none;
+color: white;
+}
+.navigationbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Oswald';
+    color: white;
+    font-weight: bold;
+}
+.navigationbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navigationbar ul li{
+    display: inline-block;
+}
+.navigationbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+    letter-spacing: 1px;
+}
+.navigationbar ul li a:hover{
+    background-color: rgb(131, 0, 44);
+}
+body{
+    background-color: black;
+}
+.content{
+    font-family: 'Oswald';
+    color: white;
+    margin-top: 35%;
+    margin-left: 100px; 
+}
+h1{
+    font-size: 70px;
+}
+p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.next{
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    background: rgb(131, 0, 44);
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    top: 90%;
+    right: 5%;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.next:hover{
+    background: gray;
+}
+#uic{
+    margin-top: 80px;
+    margin-left: 400px;
+    width: 500px;
+    filter: grayscale(0);
+}
+#uic:hover{
+    filter: grayscale(1);
+    transition: 3s;
+    cursor: default;
+}
+#face{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    width: 25%;
+    height: 60%;
+    filter: none;
+}
+h2{
+    font-size: 50px;
+}
+.content ul li{
+    font-size: 16px;
+}
+#face:hover{
+    filter: none;
+    cursor: default;
+}
