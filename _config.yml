@@ -1,2 +1,2 @@
 theme: jekyll-theme-cayman
-.baseURL = 'https://arnslnc.github.io/lancearanas/index.html'
+.baseurl: /index.html
