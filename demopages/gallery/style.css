@@ -5,9 +5,9 @@
     font-family: 'Oswald', sans-serif;
 }
 .navigationbar{
-    background-color: whitesmoke;
-    color: black;
-    border-bottom: 2px solid black;
+    background-image: linear-gradient(90deg, #DFABFB, #70B0C2);
+    color: white;
+    border-bottom: 2px solid white;
     width: 100%;
     line-height: 80px;
     height: 80px;
@@ -20,7 +20,8 @@
 }
 .navigationbar a{
 text-decoration: none;
-color: black;
+color: white;
+font-weight: 500;
 }
 .navigationbar a.nav-logo{
     float: left;
@@ -31,11 +32,10 @@ color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Oswald';
-    color: black;
+    background: linear-gradient( #E4AAFA, #FB3277, #A1002B);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-weight: bold;
-}
-.navigationbar a.nav-logo:hover{
-    color: grey;
 }
 .navigationbar ul{
     float: right;
@@ -46,7 +46,6 @@ color: black;
 }
 .navigationbar ul li{
     display: inline-block;
-    font-weight: bold;
 }
 .navigationbar ul li a{
     display: block;
@@ -56,9 +55,11 @@ color: black;
     letter-spacing: 1px;
 }
 .navigationbar ul li a:hover{
-    color: white;
     background-color: rgb(131, 0, 44);
 }
+    body{
+        background-image: linear-gradient(90deg, #DFABFB, #70B0C2);
+    }
 .container{
     display: flex;
     flex-direction: column;
@@ -73,12 +74,15 @@ color: black;
 }
 .container .heading h3{
 font-size: 3em;
-font-weight: bolder;
+font-weight: 200;
+background: linear-gradient( 000, #4D8991, #56BDC7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 padding-bottom: 10px;
-border-bottom: 3px solid #222;
+border-bottom: 3px solid white ;
 }
 .container .heading h3 span{
-    font-weight: 100;
+    font-weight: bolder;
     }
     .container .box{
         display: flex;
@@ -97,44 +101,44 @@ border-bottom: 3px solid #222;
     margin-top: 20%;
     padding-bottom: 50px;  
 }
-    .back{
-        font-family: 'Oswald';
-        font-size: 20px;
-        font-weight: bolder;
-        position: absolute;
-        background: whitesmoke;
-        cursor: pointer;
-        padding: 12px 20px;
-        color: black;
-        border: 0;
-        border-radius: 20px;
-        top: 90%;
-        right: 11%;
-        letter-spacing: 2px;
-        text-decoration: none;
-    }
-    .back:hover{
-        background: rgb(131, 0, 44);
-    }
-    .next{
-        font-family: 'Oswald';
-        font-size: 20px;
-        font-weight: bold;
-        position: absolute;
-        background: whitesmoke;
-        cursor: pointer;
-        padding: 12px 20px;
-        color: black;
-        border: 0;
-        border-radius: 20px;
-        top: 90%;
-        right: 5%;
-        letter-spacing: 2px;
-        text-decoration: none;
-    }
-    .next:hover{
-        background: rgb(131, 0, 44);
-    }
+.back{
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    background: rgb(131, 0, 44);
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    top: 90%;
+    right: 11%;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.back:hover{
+    background: gray;
+}
+.next{
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    background: rgb(131, 0, 44);
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    top: 90%;
+    right: 5%;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.next:hover{
+    background: gray;
+}
     @media only screen and (max-width: 1040px){
         .navigationbar{
             display:none;

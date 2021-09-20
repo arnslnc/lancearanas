@@ -30,11 +30,10 @@ color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Oswald';
-    color: black;
+    background: linear-gradient( #E4AAFA, #FB3277, #A1002B);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-weight: bold;
-}
-.navigationbar a.nav-logo:hover{
-    color: grey;
 }
 .navigationbar ul{
     float: right;
